@@ -1,0 +1,123 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;  
+}
+#container {
+  display: flex;
+  margin: 5px 5px;
+  
+}
+#content {
+  flex: 2;
+  background-color:rgb(227, 223, 223);
+} 
+#summary {
+  flex:2;
+  background-image: url('pizza.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size:cover;
+  visibility:hidden;
+ 
+ }
+#sizes {
+  display: flex;
+  margin: 15px;
+  align-content: flex-end;
+}
+.pizza_image_2 {
+  position: inherit; 
+  width: 50px; 
+  height: 50px;
+  overflow: hidden; 
+  border-radius: 50%; 
+} 
+.pizza_image_4 {
+  position: inherit; 
+  width: 65px; 
+  height: 65px; 
+  overflow: hidden; 
+  border-radius: 50%; 
+}
+.pizza_image_6 {
+  position: inherit; 
+  width: 80px; 
+  height: 80px; 
+  overflow: hidden; 
+  border-radius: 50%; 
+}
+.pizza_image_8 {
+  position: inherit; 
+  width: 95px; 
+  height: 95px; 
+  overflow: hidden; 
+  border-radius: 50%; 
+}
+img { 
+  width: 100%; 
+  height: auto;
+  opacity: 0.6;
+}
+
+img:hover { 
+  opacity: 0.8;
+}
+
+#form_label  {
+  color: brown;
+} 
+  
+#p_size {
+  color: brown;
+  text-align: end;
+  font-weight: bold;
+  font-size: 20px;
+}
+label {
+  display: inline-block;
+  margin: 10px 0;
+}
+#summary label {
+  font-weight: bold;
+  font-size: 20px;
+}  
+#order_summary {
+  margin: 5px 15px;;
+}
+#total_price {
+  color: brown;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+form {
+  margin-left: 20px; 
+}
+
+h1 {
+  margin-left: 20px;
+  color: brown;
+}
+#toppings {
+  display: flex;
+  margin: 10px 0;
+  display: inline-block;
+}
+  
+button {
+  border: none;
+  background-color: brown;
+  padding: 10px;
+  border-radius: 5%;
+  margin-top: 20px;
+  color: white;
+}
+  
+input,
+button, #delivery {
+  font-family: inherit;
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+   

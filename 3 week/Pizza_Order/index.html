@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <div id="content">
+                <h1>Pizza Order</h1>
+                <form>
+                <div id="customer">
+                        <label id="form_label" for="customer_name">Your name : </label>
+                        <input type="text" id="customer_name">
+                </div>
+                <label id="form_label"> Pizza Size :  </label><label id="p_size"> </label>
+                <div id="sizes">
+                        <div class="pizza_image_2"> 
+                            <img id="for 2" onclick="selectSize('for 2')" src="pizza_icon.png" /> 
+                        </div>
+                        <div class="pizza_image_4"> 
+                            <img onclick="selectSize('for 4')" src="pizza_icon.png" /> 
+                        </div>
+                        <div class="pizza_image_6"> 
+                            <img onclick="selectSize('for 6')" src="pizza_icon.png" /> 
+                        </div>
+                        <div class="pizza_image_8">
+                            <img onclick="selectSize('for 8')" src="pizza_icon.png"> 
+                        </div>
+                </div>
+                <div id="toppings">
+                    <label id="form_label"> Toppings : (first four are free, after that +0,5€)</label>
+                    <div>
+                        <input type="checkbox" value="onions" name="topping"/> 
+                        <label>Onions</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="Peppers" name="topping"/> 
+                        <label>Peppers</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="olives" name="topping"/> 
+                        <label>Olives</label>
+                    </div> 
+                    <div>
+                        <input type="checkbox" value="pineapple" name="topping"/> 
+                        <label>Pineapple</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="artichokes" name="topping"/> 
+                        <label>Artichokes</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="mushrooms" name="topping"/> 
+                        <label>Mushrooms</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="pepperoni" name="topping" name="topping"/> 
+                        <label>Pepperoni</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="bacon" name="topping"/> 
+                        <label>Bacon</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" value="cheese" name="topping"/> 
+                        <label>Extra cheese</label>
+                    </div>
+                </div>  
+                <div>
+                    <label id="form_label" for="delivery"> Delivery : </label>
+                    <select id="delivery" onchange="selectDelivery()">
+                        <option id="home" value="Home delivery">Delivery home</option>
+                        <option id="eatin" value="Eat in">Eat in</option>
+                        <option id="pickup" value="Pick up">Pickup food</option>
+                    </select> <label id="delivery_price"></label>
+                </div>
+                <div id="btnCalculate">
+                    <button type="submit" onclick="generateSummary()">Order Pizza</button>
+                </div>
+                </form>
+            </div>
+            <div id="summary">
+                    <div id="order_summary">
+                        <h1> Your order summary : </h1>
+                        <label>Your name : </label>
+                        <span id="cust_name_summary"></span>
+                        <div>
+                            <label>Pizza size : </label>
+                            <span id="piz_size_summary"></span>
+                        </div>
+                        <div>
+                            <label>Toppings : </label>
+                            <span id="toppings_summary"></span>
+                        </div>
+                        <div>
+                            <label>Delivery method : </label>
+                            <span id="delivery_summary"></span>
+                        </div>
+                       <div>
+                        <p id="total_price">
+                            <label>TOTAL PRICE : </label>
+                            <label id="price_summary"></label>
+                        </p>
+                       </div>
+                    </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
